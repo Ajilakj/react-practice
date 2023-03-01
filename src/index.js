@@ -1,16 +1,21 @@
 import React from "react";
 import ReactDom from "react-dom";
+
+import "./styles.css";
 const first = "Ajila";
 const last = "Johnkutty";
 const food = "My Favourite foods";
 const no = 5;
+const img = "https://picsum.photos/200";
+
 ReactDom.render(
   <>
-    <h1>
+    <h1 className="heading">
       Hi I am {first} {last}
     </h1>
-    <h2>{food}</h2>
-    <ul>
+    <h2 contentEditable="true">{food}</h2>
+    <img src={img + "?grayscale"} />
+    <ul className="list">
       <li>ice cream</li>
       <li>Chocolate</li>
       <li>Cake</li>
