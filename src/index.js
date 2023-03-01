@@ -18,6 +18,8 @@ ReactDom.render(
     <p>
       My lucky number is {no} or {5 + 1} or {4 * 4}
     </p>
+    <p>created by {first} </p>
+    <p>copy right {new Date().getFullYear()}</p>
   </>,
   document.getElementById("root")
 );
