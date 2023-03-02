@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDom from "react-dom";
 
 function Greetings() {
   const root = document.getElementById("root");
@@ -19,7 +18,7 @@ function Greetings() {
     msg = "Good Night";
     customColor.color = "blue";
   }
-  ReactDom.render(<h1 style={customColor}>{msg}</h1>, root);
+  return (<h1 style={customColor}>{msg}</h1>), root;
 }
 
 export default Greetings;
