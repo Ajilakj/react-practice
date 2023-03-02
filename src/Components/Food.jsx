@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDom from "react-dom";
 import "../styles.css";
 
 function Food() {
@@ -9,7 +8,7 @@ function Food() {
   const no = 5;
   const img = "https://picsum.photos/200";
 
-  ReactDom.render(
+  return (
     <>
       <h1 className="heading">
         Hi I am {first} {last}
@@ -26,8 +25,7 @@ function Food() {
       </p>
       <p>created by {first} </p>
       <p>copy right {new Date().getFullYear()}</p>
-    </>,
-    document.getElementById("root")
+    </>
   );
 }
 
